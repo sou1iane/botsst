@@ -1,0 +1,43 @@
+:bakerbob:
+  # mode: head - the last block
+  # mode: irreversible - the block that is confirmed by 2/3 of all block
+  # producers and is thus irreversible!
+  :block_mode: irreversible
+  
+  # Account name for voting...bakerbob's steemit account
+  :account_name: social
+  
+  # Posting wif is used to vote reply with a confirm comment.  See
+  # `support/confirm.md` to customize confir comment.
+  :posting_wif: 5JrvPrQeBBvCRdjv29iDvkwn3EQYZ9jqfAHzrCyUvfbEbRkrYFC
+  
+  # Active wif is only used in bounce mode to return funds.  Please transfer
+  # funds out of your wallet before using bounce mode.
+  :active_wif: 5JrvPrQeBBvCRdjv29iDvkwn3EQYZ9jqfAHzrCyUvfbEbRkrYFC
+  
+  # Batch vote weight is split between the bidders.  This value also sets the
+  # batch timespan.  E.g.: Setting 100.00 % results in one batch every 2.4
+  # hours; 50.00 % results in one batch every 1.2 hours; so on.
+  :batch_vote_weight: 100.00 %
+  
+  # When calculating a window, a bid will be ignored if it doesn't reach this
+  # minimum.  If 0.00 %, all bids are accepted no matter how little they impact
+  # the total.
+  :min_effective_weight: 0.25 %
+  
+  # This is the amount to of voting weight to reserve in each voting batch.
+  # Normally, this should be set to 0.00 % unless this account often casts votes
+  # outside of Baker Bob.
+  :reserve_vote_weight: 0.00 %
+  
+  # Minimum bid amount.
+  :minimum_bid: 0.100 SBD
+
+  # Maximum bid amount.
+  :maximum_bid: 0.500 SBD
+  
+  # List of account that shall not get votes, separated by spaces.
+  :blacklist: mikethemug
+:chain_options:
+  :chain: steem
+  :url: https://steemd.steemit.com
